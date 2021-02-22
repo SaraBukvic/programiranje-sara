@@ -1,0 +1,33 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+void gime(string ime, string prezime, string djevprez, string gradr){
+
+
+string fname,bcity,swname;
+fname=ime.substr(0,3);
+bcity=gradr.substr(0,2);
+swname=fname+bcity;
+
+string surname, gradrod, swsurname;
+surname=djevprez.substr(0,2);
+gradrod=gradr.substr(0,3);
+swsurname=surname+gradrod;
+cout<<"Vase StarWars ime je:"<<swname<<" "<<swsurname<<endl;
+}
+int main()
+{
+ 
+  string ime,prezime,djevprez,gradr;
+  cout<<"Unesite ime:"<<endl;
+  cin>>ime;
+  cout<<"Unesite prezime:"<<endl;
+  cin>>prezime;
+  cout<<"Unesite djevojacko prezime majke:"<<endl;
+  cin>>djevprez;
+  cout<<"Unesite grad u kojem ste rodjeni:"<<endl;
+  cin>>gradr;
+  cout<<endl;
+  gime(ime, prezime, djevprez, gradr);
+}
